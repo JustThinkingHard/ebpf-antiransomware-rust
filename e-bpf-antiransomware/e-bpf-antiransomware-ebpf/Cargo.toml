@@ -1,0 +1,17 @@
+[package]
+name = "e-bpf-antiransomware-ebpf"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+e-bpf-antiransomware-common = { path = "../e-bpf-antiransomware-common" }
+
+aya-ebpf = { workspace = true }
+aya-log-ebpf = { workspace = true }
+
+[build-dependencies]
+which = { workspace = true }
+
+[[bin]]
+name = "e-bpf-antiransomware"
+path = "src/main.rs"
