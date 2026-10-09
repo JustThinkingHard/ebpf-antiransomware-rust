@@ -11,4 +11,7 @@ pub struct LinkEvent {
     pub inode: u64,
 }
 
-pub const READ_SZ: u32 = 512;
+pub const WHITELIST_PATH: &str = "whitelist.txt";
+pub const BLACKLIST_PATH: &str = "blacklist.txt";
+
+pub const READ_SZ: usize = 512;
